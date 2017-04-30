@@ -2,8 +2,9 @@
   "private": true,
   "devDependencies": {
     "exports-loader": "^0.6.3",
+    "json-loader": "^0.5.4",
     "source-map-loader": "^0.1.5",
-    "webpack": "^1.13.2"
+    "webpack": "^1.15.0"
   },
   "dependencies": {
     "amazon-cognito-identity-js": "^1.2.0",

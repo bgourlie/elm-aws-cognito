@@ -37,6 +37,10 @@ module.exports = {
       {
         test: require.resolve(AWS_SDK_BUNDLE),
         loader: 'exports?AWSCognito'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ]
   }
