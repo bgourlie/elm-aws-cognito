@@ -4,7 +4,6 @@ import Cognito
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onClick, onInput)
-import Html.App
 
 
 type alias Model =
@@ -147,7 +146,7 @@ view model =
                 , input
                     [ placeholder "Password"
                     , defaultValue form.password
-                    , type' "password"
+                    , type_ "password"
                     ]
                     []
                 , case form.error of
@@ -188,9 +187,9 @@ view model =
             text "TODO: Thanks for signing up!"
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
-    Html.App.program
+    Html.program
         { init = ( initialModel, Cmd.none )
         , subscriptions =
             \model ->
